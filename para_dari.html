@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Dari 💙</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      background: linear-gradient(135deg, #071b33, #123d68, #087eae);
+      overflow: hidden;
+    }
+
+    .card {
+      width: min(100%, 520px);
+      padding: 42px 26px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 28px;
+      background: rgba(255,255,255,.10);
+      box-shadow: 0 18px 55px rgba(0,0,0,.25);
+      backdrop-filter: blur(10px);
+      animation: aparecer 1s ease both;
+    }
+
+    .heart {
+      color: #55d9ff;
+      font-size: clamp(90px, 22vw, 145px);
+      line-height: 1;
+      text-shadow: 0 0 18px rgba(85,217,255,.65);
+      animation: latir 1.2s ease-in-out infinite;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(30px, 7vw, 44px);
+      letter-spacing: .5px;
+    }
+
+    p {
+      margin: 0;
+      color: #d9f5ff;
+      font-size: clamp(17px, 4vw, 21px);
+      line-height: 1.6;
+    }
+
+    .sparkle {
+      margin-top: 24px;
+      color: #9ceaff;
+      letter-spacing: 10px;
+      font-size: 20px;
+    }
+
+    @keyframes latir {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.12); }
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="heart" aria-label="corazón celeste" role="img">♥</div>
+    <h1>Dari, te quiero</h1>
+    <p>Solo quería recordártelo con un pequeño detalle hecho para ti. 💙</p>
+    <div class="sparkle" aria-hidden="true">✦ ✧ ✦</div>
+  </main>
+</body>
+</html>
